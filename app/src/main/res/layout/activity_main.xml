@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:text="E-mail:  "/>
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textColor="@color/White"
+                android:inputType="textEmailAddress"
+                android:paddingStart="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:text="Şifre:     "/>
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/White"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkbox_hatirla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txt_hatirla"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_hatirla"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:text="Beni Hatırla"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_sifre_sifirla"
+                    android:text="Şifremi Unuttum"
+                    android:textColor="@color/White"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:layout_marginBottom="100dp"
+            android:text="Giriş Yap" />
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hesap oluşturun"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/img_close_dialog_detaylar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:id="@+id/txt_is_kolu_adi"
+            android:textSize="18dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resim Yükleniyor..."
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:id="@+id/txt_resim_yükleniyor"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/img_is_kolu"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Genel Profil"
+                android:id="@+id/btn_view_genel_profil"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Kazalar ve Hastalıklar"
+                android:id="@+id/btn_view_kazalar_hastalıklar"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Sağlık ve Güvenlik Önlemleri"
+                android:id="@+id/btn_onlemler"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Kullanılan Makinalar ve Tezgahlar"
+                android:id="@+id/btn_malzemeler"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

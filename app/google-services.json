@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949589403789",
+    "project_id": "issagligiveguvenligi-e278a",
+    "storage_bucket": "issagligiveguvenligi-e278a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949589403789:android:b4679e79c91f08525e5ac4",
+        "android_client_info": {
+          "package_name": "com.deniz.issaglgveguvenligi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949589403789-vmfcfbhq8egbt4r22dtq239galmfjbqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD10wkW-G1Y17eaEK0pq7LFwjwWHyZSdFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949589403789-vmfcfbhq8egbt4r22dtq239galmfjbqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
